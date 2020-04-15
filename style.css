@@ -1,10 +1,23 @@
 @charset "utf-8";
 
+@font-face {
+	font-family: 'miniFont';
+	src: url('./font/lovefont.ttf'); /* IE9 Compat Modes */
+	src: url('./font/lovefont.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
+
+html, body, section {
+	height: 100%;
+  }
+
 body{
 	margin: 0;
 	padding:0;
-	background: #f8a6c4; /*pink*/
+	background: #ffffff; /*white for unicorn*/
 	z-index: -1;
+	height: 100%;
+	font-family: 'miniFont', Fallback, sans-serif;
 }
 
 /* clear fix */
@@ -453,7 +466,7 @@ body{
 }
 
 .tt{
-    margin-top: 25px;
+    /* margin-top: 25px; */
     font-size: 21px;
     text-align: center;
 
@@ -492,3 +505,23 @@ body{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+
+.flex-container {
+	display: flex;
+	/* flex-direction: column;
+	justify-content: center; */
+	height: 100%;
+  }
+  
+  .left-half {
+	flex: 1;
+	padding: 1rem;
+  }
+  
+  .right-half {
+	flex: 1;
+	padding: 1rem;
+  }
+
+  

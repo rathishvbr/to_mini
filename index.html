@@ -8,7 +8,7 @@
 	window.addEventListener("load",function(){
 	let a = document.createElement("div");
 	let canvas = document.getElementsByClassName("sketch")[0];
-	a.style.height = 200 + "px";
+	// a.style.height = 200 + "px";
 	a.style.visibility ="hidden";
 	a.style.top = "0";
 	document.body.appendChild(a);
@@ -17,65 +17,34 @@
 </head>
 
     <body class = "tt">
-            <div class="container">
-            <div class="wrapper">
-            <div class="littleH">
-                <div class="bodyH">
-                    <div class="trousers">
-                        <div class="condoleBelt">
-                            <div class="left"></div>
-                            <div class="right"></div>
-                        </div>
-                        <div class="trousers_top"></div>
-                        <div class="pocket"></div>
+            <section class="flex-container">
 
-                        <span class="line_left"></span>
-                        <span class="line_right"></span>
-                        <span class="line_bottom"></span>
-                    </div>
-                </div>
-                <div class="hair">
-                    <span class="left_hair_one"></span>
-                    <span class="left_hair_two"></span>
-                </div>
-                <div class="eyes">
-                    <div class="leftEye">
-                        <div class="left_blackEye">
-                            <div class="left_white"></div>
-                        </div>
-                    </div>
-                    <div class="rightEye">
-                        <div class="right_blackEye">
-                            <div class="right_white"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mouse">
-                    <div class="mouse_shape"></div>
-                </div>
-                <div class="hands">
-                    <div class="leftHand"></div>
-                    <div class="rightHand"></div>
-                </div>
-                <div class="feet">
-                    <div class="left_foot"></div>
-                    <div class="right_foot"></div>
-                </div>
-                <div class="groundShadow"></div>
-            </div>
-        </div>
 
         <!-- AUDIO EFFECT GOES HERE -->
-        <div class = "greetings">
-            <p>Happy Birthday My Dear Jeannie</p>
+        <div class = "left-half">
+            <p style="font-size: 40px;">Happy, Happy Birthday My Love</p>
+            <br>
+            <!-- <p>Hey my unicorn, I wanted to wish happy b'day. This is your first b'day together, I exteremly miss you
+                , Also I'm worried that I'm near you. Love you my love</p> -->
+            <p>Hey my unicorn, You may be thousands of miles away, but I still feel you right next to me. I wish you 
+                truly were right next to me though. Because then we could have done the best birthday party ever! Happy Birthday!
 
+            </p>
+
+            <p> I may not be able to give you a gift due to the distance and this virus, but I can give
+                you all the love you deserve, because you are my soul and love. Again Happy Birthday!!!
+            </p>
+            <p> And this our first b'day together my love. I'm so happy that you gonna be mine</p>
             <audio controls autoplay>
                 <source src="bd_song.mp3" type="audio/mpeg" display="none" >
             </audio>
         </div>
 
-    </div>
+        <div class="right-half">
+            <img src="./img/unicorn.png"></img>
+           </div>
 
+        </section>
     <!-- SCRIPT EFFECT STARTS HERE -->
     <script src="js/sketch.js"></script>
     <script id = "dots"value="transparent">
