@@ -38,6 +38,7 @@
                 you all the love you deserve, because you are my soul and love. Again Happy Birthday!!!
             </p>
             <p> And this our first b'day together my love. I'm so happy that you are mine 	<strong style="color: red;">&#10084;</strong></p>
+            <br>
             <audio controls autoplay>
                 <source src="bd_song.mp3" type="audio/mpeg" display="none" >
             </audio>
@@ -53,10 +54,12 @@
             <p>Wanna see your gift my love!!! 	<strong style="color: red;">&#10084;</strong></p>
      
               <div class="form-group">
-                <label for="usr">Code</label>
+                <!-- <label for="usr">Code</label> -->
                 <input type="password" placeholder="How do I call you!!! &#10084;" class="form-control" id="code">
               </div>
-              <button onclick="checkAndShow()"  class="btn btn-default">Love me my love</button>
+              <button onclick="checkAndShow()"  class="btn" style="color: #fff;
+              background-color: #a857a1;
+              border-color: #e49ade;">Love me my love</button>
               <br>
               <br>
               <div class="hide-and-see">
@@ -78,7 +81,7 @@
     <p> <strong>Clue: </strong> What will you do when your boat sinking</p>
     <p><strong style="color: red;">&#10084;</strong></p>
     <audio controls autoplay>
-        <source id="main-sound" src="mini.wav" type="audio/mpeg" display="none" >
+        <source id="main-sound" src="main.wav" type="audio/mpeg" display="none" >
     </audio>
 </div>
 
@@ -97,7 +100,7 @@
     if(code){
         
 
-    if(code === "kannukutti" || code === "youcantseeme" || code==="o") {
+    if(code === "kannukutti" || code === "youcantseeme") {
         $(".hide-and-see").css("display","block");
         // $("#hb-sound").pause();
         // const audio = document.querySelector("#hd-sound");
