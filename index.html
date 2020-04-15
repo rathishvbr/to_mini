@@ -1,8 +1,12 @@
 <!doctype html>
 <html>
     <head>
-        <title>birthdayGift</title>
+        <title>Mini my love</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
 	<script>
 	window.addEventListener("load",function(){
@@ -12,7 +16,7 @@
 	a.style.visibility ="hidden";
 	a.style.top = "0";
 	document.body.appendChild(a);
-	});
+    });
 	</script>
 </head>
 
@@ -22,8 +26,7 @@
 
         <!-- AUDIO EFFECT GOES HERE -->
         <div class = "left-half">
-            <p style="font-size: 40px;">Happy, Happy Birthday My Love</p>
-            <br>
+            <h2>Happy, Happy Birthday My Love 	<strong style="color: red;">&#10084;</strong></h2>
             <!-- <p>Hey my unicorn, I wanted to wish happy b'day. This is your first b'day together, I exteremly miss you
                 , Also I'm worried that I'm near you. Love you my love</p> -->
             <p>Hey my unicorn, You may be thousands of miles away, but I still feel you right next to me. I wish you 
@@ -34,7 +37,7 @@
             <p> I may not be able to give you a gift due to the distance and this virus, but I can give
                 you all the love you deserve, because you are my soul and love. Again Happy Birthday!!!
             </p>
-            <p> And this our first b'day together my love. I'm so happy that you gonna be mine</p>
+            <p> And this our first b'day together my love. I'm so happy that you are mine 	<strong style="color: red;">&#10084;</strong></p>
             <audio controls autoplay>
                 <source src="bd_song.mp3" type="audio/mpeg" display="none" >
             </audio>
@@ -44,9 +47,71 @@
             <img src="./img/unicorn.png"></img>
            </div>
 
+
+           <div class="container">
+            <h2>Secret</h2>
+            <p>Wanna see your gift my love!!! 	<strong style="color: red;">&#10084;</strong></p>
+     
+              <div class="form-group">
+                <label for="usr">Code</label>
+                <input type="password" class="form-control" id="code">
+              </div>
+              <button onclick="checkAndShow()"  class="btn btn-default">Love me my love</button>
+
+              <div class="hide-and-see">
+                  <p>Scroll down to the bottom</p>
+             </div>
+        
+          </div>
+
+        </section>
+        <section class="flex-container hide-and-see">
+ <!-- AUDIO EFFECT GOES HERE -->
+ <div class = "right-half">
+    <h2>Ohh My dear!!! Finally you got it.</h2>
+    <br>
+
+    <p> You know what it's not yet over. Hear the sound 	<strong style="color: red;">&#10084;</strong></p>
+    <p> <strong>Clue: </strong> What will you do when your boat sinking</p>
+    <p><strong style="color: red;">&#10084;</strong></p>
+    <audio controls autoplay>
+        <source id="hb-sound" src="bd_song.mp3" type="audio/mpeg" display="none" >
+    </audio>
+</div>
+
+<div class="left-half">
+    <img src="./img/sink.png"></img>
+   </div>
         </section>
     <!-- SCRIPT EFFECT STARTS HERE -->
     <script src="js/sketch.js"></script>
+    <script>
+
+
+   function checkAndShow() {
+    var code = $("#code").val();
+
+    if(code){
+        
+
+    if(code === "kannukutti" || code === "youcantseeme" || code==="o") {
+        $(".hide-and-see").css("display","block");
+        // $("#hb-sound").pause();
+        // const audio = document.querySelector("#hd-sound");
+        // audio.pause();
+        // audio.currentTime = 0;
+    } else {
+        alert("How do I call you dear: Not this =>" + code);
+    }
+   } else {
+    alert("Empty not allowed dear, How I usally call you :)??")
+   }
+
+
+    }
+
+
+    </script>
     <script id = "dots"value="transparent">
         function Particle( x, y, radius ) {
             this.init( x, y, radius );
